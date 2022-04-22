@@ -125,9 +125,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Matcha.BackgroundService">
-      <Version>1.0.5473</Version>
-    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.6" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.0.0.396" />
@@ -136,6 +133,14 @@
     <None Include="SampleBackground.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Matcha.BackgroundService.UWP\Matcha.BackgroundService.UWP.csproj">
+      <Project>{ca69ea56-6332-4207-adeb-2d4996448980}</Project>
+      <Name>Matcha.BackgroundService.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Matcha.BackgroundService\Matcha.BackgroundService.csproj">
+      <Project>{4d52e5ea-c24e-4380-9650-b84d7908701d}</Project>
+      <Name>Matcha.BackgroundService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SampleBackground\SampleBackground.csproj">
       <Project>{753cc20f-1b34-4328-9ee3-613575f528c5}</Project>
       <Name>SampleBackground</Name>
